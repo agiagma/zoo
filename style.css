@@ -1,0 +1,240 @@
+/* general window setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+/* header and nav box styling */
+/* delete/change colour later, "visual debugging only" */
+header{
+    background-color: #A7C7E7;
+    padding: 0.8em 0;
+    box-shadow: 2px 2px 2px #A7C7E7;
+}
+header, h1{
+    color: #D0006E;
+}
+.nav-container{
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;   
+}
+nav li{
+    margin-left: 1em;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a :hover, nav a:focus{
+    color: white;
+}
+/* footer */
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+/* contains index content */
+.wrapper{
+display: flex;
+flex-flow: wrap row;
+}
+/* left side styling */
+.left-side{
+    display: flex;
+    flex-flow: wrap row;
+    width: 60%;
+    padding-left: 2em;   
+}
+/* content of left side */
+.text1{
+    display: flex;
+    justify-content: center;
+    padding: 2em 2em 0 2em;
+}
+.text2{
+    text-align: center;
+    width: 30%;
+    padding-left: 1em;
+    padding-top: 3em;
+}
+.video{
+    width: 40%;
+}
+/* right side styling */
+.right-side{
+    display: flex;
+    flex-flow: wrap row;
+    flex-basis: 40%;
+    padding: 2em 2em 0 0;
+}
+/* content of right side */
+/* image sizing */
+.comments{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+/* title of comments */
+h3{
+    width: 100%;
+    padding: 0 0 1em 0;
+    border: 2px solid black;
+    text-align: center;
+}
+.comments-left{
+width: 50%;
+}
+.comments-right{
+width: 50%;
+}
+.comments img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.bottom-dl-content{
+   display: flex;
+   flex-flow: wrap row;
+   flex-basis: 100%;
+   padding: 2em 0 0 0;
+   justify-content: center;
+   justify-content: space-around;
+
+}
+.bottom-dl-content dl{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+}
+.bottom-dl-content dt{
+    font-weight: bold;
+    font-size: larger;
+}
+/* contains info content */
+.info-h1{
+    text-align: center;
+    padding: 2em 0 2em 0;
+}
+.info-table{
+    display: flex;
+    flex-flow: wrap row;
+    flex-basis: 100%;
+    justify-content: center;
+}
+table {
+    position: relative;
+    overflow: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 2em 0 0 0;
+}
+th{
+    font-size: 20px;
+    border: 3px solid black;
+}
+td,tr{
+   border: 1px solid black;
+}
+
+.info h1{
+font-size: 55px;
+text-align: center;
+}
+/* contains contact content */
+.contact{
+    display: flex;
+    flex-flow: wrap row;
+    flex-basis: 100%;
+    position: relative;
+    padding: 2em 2em 0 2em;
+}
+.rate-form{
+    display: flex;
+    flex-flow: wrap column;
+    flex-basis: 50%;
+    position: relative;
+}
+.rate-form{
+    display: flex;
+    flex-flow: wrap column;
+    flex-basis: 50%;
+}
+/* star rating */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/* buttons of contact forms */
+.buttons{
+    display: flex;
+    flex-flow: wrap row;
+    flex-basis: 100%;
+}
+
+
+
+
+
+/* changed comment to ul, delet late on? */
+/* .comments p{
+    margin-bottom: 1em;
+} */
+/* .comments ul{
+    padding: 0;                                     list style didnt work at all, ask becca
+    margin: 0;
+    list-style-type: none;
+}
+li.visitor-1{
+    background: url('Bilder/admiral.jpg') no-repeat left top;
+} */
